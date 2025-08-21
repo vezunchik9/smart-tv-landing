@@ -207,7 +207,7 @@ export default function SmartTVLanding() {
         <div className="mt-4 flex items-center justify-center gap-3 text-sm opacity-95">
           <span className="text-xl font-bold">5,0</span>
           <span className="text-yellow-400" aria-label="5 из 5">★★★★★</span>
-          <a href={AVITO_PROFILE_WEB} onClick={openAvito} className="text-blue-500 hover:underline">239 отзывов</a>
+          <a href={`/go/avito?to=${encodeURIComponent(AVITO_PROFILE_WEB)}`} className="text-blue-500 hover:underline">239 отзывов</a>
         </div>
 
         <div className="mt-3 flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-white/90">
@@ -384,7 +384,7 @@ export default function SmartTVLanding() {
         <p className="text-center text-gray-700 font-medium mb-6">
           Читайте отзывы на
           {' '}
-          <a href={AVITO_PROFILE_WEB} onClick={openAvito} className="text-blue-600 underline">Avito</a>
+          <a href={`/go/avito?to=${encodeURIComponent(AVITO_PROFILE_WEB)}`} className="text-blue-600 underline">Avito</a>
         </p>
 
         <div
