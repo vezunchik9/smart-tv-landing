@@ -196,7 +196,7 @@ export default function SmartTVLanding() {
               Начать бесплатно
             </Button>
           </a>
-          <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/79991007585" target="_blank" rel="noopener noreferrer">
             <Button className="bg-white text-blue-700 hover:bg-white/90 text-base sm:text-lg px-5 py-3 rounded-full transition-all duration-200 flex items-center gap-2">
               <MessageCircle className="size-5" />
               Написать в WhatsApp
@@ -355,19 +355,21 @@ export default function SmartTVLanding() {
         </div>
       </motion.section>
 
-      {/* Блок о мастере с фото (размер как у других фото) */}
+      {/* Блок о мастере с фото (две колонки на десктопе) */}
       <motion.section {...sectionAnim} className="py-12 px-4 max-w-5xl mx-auto text-gray-800">
-        <div className="bg-blue-50 p-8 md:p-10 rounded-2xl flex flex-col items-center gap-6">
-          <img
-            src="/master/maksim.jpg"
-            alt="Мастер Максим"
-            className="w-full h-56 sm:h-64 md:h-72 object-cover rounded-2xl shadow-md"
-            loading="lazy"
-          />
-          <div className="max-w-4xl text-base md:text-lg leading-relaxed md:leading-8 text-center">
+        <div className="bg-blue-50 p-8 md:p-10 rounded-2xl grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
+          <div className="md:col-span-2">
+            <img
+              src="/master/maksim.jpg"
+              alt="Мастер Максим"
+              className="w-full h-56 sm:h-64 md:h-[280px] object-cover rounded-2xl shadow-md"
+              loading="lazy"
+            />
+          </div>
+          <div className="md:col-span-3 text-base md:text-lg leading-relaxed md:leading-8 text-center md:text-left">
             <p><strong>Мастер Максим.</strong> Настраиваю Smart TV и приставки удалённо с 2015 года. Оплата только после результата — меня рекомендуют друзьям.</p>
-            <div className="mt-4 flex justify-center">
-              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+            <div className="mt-4 flex justify-center md:justify-start">
+              <a href="https://wa.me/79991007585" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-[#25D366] hover:bg-[#20bd59] text-white rounded-full px-5 py-2.5 flex items-center gap-2 text-base font-medium">
                   <MessageCircle className="size-5" />
                   Написать Максиму
