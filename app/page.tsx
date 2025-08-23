@@ -263,7 +263,8 @@ export default function SmartTVLanding() {
 
       {/* Блок тарифов */}
       <motion.section {...sectionAnim} className="py-10 px-4 max-w-6xl mx-auto">
-        <h2 className="text-2xl font-bold text-center mb-8">Выберите оптимальный пакет</h2>
+        <h2 className="text-2xl font-bold text-center mb-2">Выберите оптимальный пакет</h2>
+        <p className="text-center text-sm text-gray-600 mb-8">Без абонентской платы и подписок — платите один раз</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             { 
